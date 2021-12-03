@@ -70,7 +70,7 @@ export default class SpaceCraftsScreen extends Component {
                         </View>
                         <View style={{ flex: 0.85 }}>
                           { <FlatList
-                                keyExtractor={}
+                                keyExtractor={this.keyExtractor}
                                 data={this.state.aircrafts}
                                 renderItem={this.renderItem}
                                 initialNumToRender={10}
